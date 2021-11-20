@@ -15,6 +15,7 @@
   --text-secondary: #666666;
   --text-disabled: #9e9e9e;
   --background: #ffffff;
+  --outline: rgba(25, 118, 210, 0.4);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,6 +30,8 @@
     --text-secondary: #b6babf;
     --text-disabled: #858c94;
     --background: #0a1929;
+    --outline: rgba(144, 202, 249, 0.4);
+
   }
 }
 
@@ -38,6 +41,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 16px;
 }
 
 body {
