@@ -15,10 +15,6 @@
   --text-secondary: #666666;
   --text-disabled: #9e9e9e;
   --background: #ffffff;
-
-  --btn-text: #ffffff;
-  --btn-bg-hover: #1565c0;
-  --btn-outline: rgba(25, 118, 210, 0.4);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,10 +29,6 @@
     --text-secondary: #b6babf;
     --text-disabled: #858c94;
     --background: #0a1929;
-
-    --btn-text: rgba(0, 0, 0, 0.87);
-    --btn-bg-hover: #42a5f5;
-    --btn-outline: rgba(144, 202, 249, 0.4);
   }
 }
 
