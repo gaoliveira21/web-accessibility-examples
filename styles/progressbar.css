@@ -1,0 +1,34 @@
+:root {
+  --progressbar-bg: rgb(167, 202, 237);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --progressbar-bg: rgb(72, 101, 124);
+  }
+}
+
+.progressbar {
+  width: 100%;
+  max-width: 680px;
+  height: 4px;
+  background-color: var(--progressbar-bg);
+  position: relative;
+}
+
+.progressbar__indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--primary);
+  transition: width 0.2s ease-in-out;
+}
+
+.progressbar__value {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(calc(100% + 8px), -50%);
+  color: var(--text-secondary);
+}
