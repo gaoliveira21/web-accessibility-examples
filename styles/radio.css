@@ -1,14 +1,3 @@
-:root {
-  --radio-outline: rgba(25, 118, 210, 0.1);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --radio-outline: rgba(144, 202, 249, 0.1);
-  }
-}
-
-
 .radio__container {
   width: 80%;
   max-width: 280px;
@@ -72,7 +61,5 @@
 }
 
 .radio__control:hover:not(.radio__control:focus) {
-  outline: none;
   box-shadow: 0 0 0 6px var(--outline);
 }
-

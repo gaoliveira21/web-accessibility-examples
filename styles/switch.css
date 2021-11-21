@@ -1,0 +1,79 @@
+:root {
+  --switch-bg: rgba(0, 0, 0, 0.38);
+  --switch-active-bg: #90caf9;
+  --switch-after-bg: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --switch-bg: rgba(255, 255, 255, 0.3);
+    --switch-active-bg: rgba(144, 202, 249, 0.5);
+    --switch-after-bg: #e0e0e0;
+  }
+}
+
+
+.switch__wrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.switch__label {
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-left: 9px;
+  cursor: inherit;
+}
+
+.switch__control {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 34px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: var(--switch-bg);
+  cursor: inherit;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.switch__control::after {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--switch-after-bg);
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+  top: 50%;
+  left: 0;
+  transform: translate(-25%, -50%);
+  transition: all 0.3s;
+}
+
+.switch__control:checked {
+  background-color: var(--switch-active-bg);
+}
+
+.switch__control:checked::after {
+  left: 80%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary);
+}
+
+.switch__control:focus {
+  outline: none;
+}
+
+.switch__control:focus::after {
+  box-shadow: 0 0 0 8px var(--outline);
+}
+
+.switch__control:hover:not(.switch__control:focus)::after {
+  box-shadow: 0 0 0 6px var(--outline);
+}
