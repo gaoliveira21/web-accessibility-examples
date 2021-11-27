@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Imagens informativas -->
+  <img src="img/foto.jpg" alt="Ursinho de pelúcia">
+
+  <!-- Imagens decorativas -->
+  <img src="img/separador.jpg" alt="" role="presentation">
+
+  <!-- Imagens funcionais -->
+  <a href="/">
+    <img src="img/logo.png" alt="voltar para a página principal">
+  </a>
+
+  <!-- Imagens complexas -->
+  <figure>
+    <img src="img/grafico.jpg" alt="Gráfico de vendas. A descrição detalhada do gráfico está a seguir">
+    <figcaption>
+      O gráfico representa o percentual de vendas dos últim
+      os três meses das filiais de Porto Alegre e João Pessoa. Nos mese
+      s de março, abril e maio a filial de Porto Alegre vendeu 25%, 35%
+      e 44% respectivamente. A filial de João Pessoa vendeu 29%, 27% e
+      39% respectivamente
+    </figcaption>
+  </figure>
+
+  <img src="img/grafico.jpg" alt="Gráfico de vendas. A descrição de talhada do gráfico está a seguir"
+    aria-describedby="detalhe">
+  <p id="detalhe">
+    O gráfico representa o percentual de vendas dos ú
+    ltimos três meses das filiais de Porto Alegre e João Pessoa. Nos
+    meses de março, abril e maio a filial de Porto Alegre vendeu 25%,
+    35% e 44% respectivamente. A filial de João Pessoa vendeu 29%, 2
+    7% e 39% respectivamente
+  </p>
+
+  <!-- Imagens SVG -->
+  <svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone"
+    class="svg-inline--fa fa-phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <path fill="currentColor" d="..."></path>
+  </svg>
+
+  <svg role="img" aria-label="Icon alternative text" data-prefix="fas" data-icon="phone" class="svg-inline--fa fa-phone"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <path fill="currentColor" d="..."></path>
+  </svg>
+
+  <svg role="img" aria-labelledby="icon-title" data-prefix="fas" data-icon="phone" class="svg-inline--fa fa-phone"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <title id="icon-title">Icon alternative text</title>
+    <path fill="currentColor" d="..."></path>
+  </svg>
+
+</body>
+
+</html>
