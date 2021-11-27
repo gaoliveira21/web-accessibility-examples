@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/button.css">
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Acessibilidade na prática</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__title">Preços</h1>
+  </header>
+
+  <nav class="navigation" aria-labelledby="main-nav">
+    <h2 class="navigation__title" id="main-nav">Menu principal</h2>
+    <ul class="navigation__menu">
+      <li class="navigation__menuitem">
+        <a tabindex="0" id="skip-content" class="navigation__link--hide">Pular para conteúdo principal</a>
+      </li>
+      <li class="navigation__menuitem">
+        <a href="#!" class="navigation__link--hide">Feedback sobre acessibilidade</a>
+      </li>
+      <li class="navigation__menuitem">
+        <a href="#!" class="navigation__link" aria-current="page">Link 1</a>
+      </li>
+      <li class="navigation__menuitem">
+        <a href="#!" class="navigation__link">Link 2</a>
+      </li>
+      <li class="navigation__menuitem">
+        <a href="#!" class="navigation__link">Link 3</a>
+      </li>
+      <li class="navigation__menuitem">
+        <a href="#!" class="navigation__link">Link 4</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="main">
+    <section class="plans">
+      <h2 tabindex="-1" id="plans" class="plans__title">Planos</h2>
+      
+      <div class="plans__grid">
+        <div class="plans__card">
+          <h3 class="card__title">Plano Pro</h3>
+          <a href="#!" class="btn">Assinar</a>
+        </div>
+    
+        <div class="plans__card">
+          <h3 class="card__title">Plano Ultra</h3>
+          <a href="#!" class="btn">Assinar</a>
+        </div>
+      </div>
+  
+      <p class="plans__enterprise">
+        Para conhecer os planos para empresas <a href="#!" class="enterprise__link">clique aqui</a>
+      </p>
+    </section>
+  </main>
+
+  <script>
+    const skipLink = document.querySelector('#skip-content')
+    const onSkipLinkHandler = () => {
+      document.querySelector('#plans').focus()
+    }
+
+    skipLink.addEventListener('click', onSkipLinkHandler)
+    skipLink.addEventListener('keypress', (event) => {
+      switch (event.key) {
+        case 'Enter':
+        case ' ':
+          onSkipLinkHandler()
+          break;
+      
+        default:
+          break;
+      }
+    })
+  </script>
+</body>
+
+</html>
