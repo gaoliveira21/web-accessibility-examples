@@ -50,6 +50,13 @@
   margin-bottom: 0.5rem;
 }
 
+.navigation__separator {
+  width: 95%;
+  height: 1px;
+  background-color: var(--primary);
+  margin: 0.5rem auto;
+}
+
 .navigation__link {
   padding: 0.5rem;
   color: var(--text-secondary);
