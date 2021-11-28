@@ -108,19 +108,19 @@
   opacity: 1;
 }
 
-.plans {
+.section {
   width: 90%;
   max-width: 720px;
   margin: 3rem auto;
 }
 
-.plans__title {
+.section__title {
   color: var(--text-primary);
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.plans__title:focus {
+.section__title:focus {
   box-shadow: 0 0 0 4px var(--outline);
 }
 
@@ -172,4 +172,26 @@
 .enterprise__link:focus {
   outline: none;
   box-shadow: 0 0 0 4px var(--outline);
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset > * {
+  margin-bottom: 2rem;
+}
+
+legend {
+  width: 100%;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  border-left: 3px solid var(--primary);
+  padding-left: 0.5rem;
+}
+
+.newsletter__submit {
+  display: flex;
+  justify-content: end;
+  margin-top: 0.5rem;
 }

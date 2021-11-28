@@ -3,6 +3,14 @@
   max-width: 280px;
   margin: 0 auto;
   align-items: flex-start;
+  border: none;
+  height: fit-content;
+}
+
+.radio__legend {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
 }
 
 .radio__wrapper {

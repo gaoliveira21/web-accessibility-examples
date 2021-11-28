@@ -40,3 +40,8 @@
 .btn:active {
   opacity: 0.7;
 }
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
