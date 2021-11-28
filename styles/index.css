@@ -101,11 +101,11 @@
 
 .navigation__link--hide:focus {
   cursor: pointer;
+  pointer-events: visible;
   background-color: var(--menu-bg);
   outline: none;
   box-shadow: 0 0 0 4px var(--outline);
   opacity: 1;
-  pointer-events: all;
 }
 
 .plans {
