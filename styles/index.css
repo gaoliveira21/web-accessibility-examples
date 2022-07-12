@@ -122,6 +122,7 @@
 
 .section__title:focus {
   box-shadow: 0 0 0 4px var(--outline);
+  outline: none;
 }
 
 .plans__grid {
